@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Students' Work : Seoul National Univ</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar" aria-label="Site header">
+      <button class="icon-button back-button" type="button" aria-label="뒤로 가기" data-action="back">
+        <span aria-hidden="true">←</span>
+      </button>
+      <h1 class="site-title" data-site-title>Students' Work : Seoul National Univ</h1>
+    </header>
+
+    <main id="view" class="view" aria-live="polite"></main>
+
+    <dialog class="work-dialog" data-work-dialog>
+      <button class="icon-button dialog-close" type="button" aria-label="닫기" data-action="close-dialog">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="dialog-grid">
+        <div class="gallery" data-gallery></div>
+        <section class="work-meta">
+          <p class="eyebrow" data-dialog-event></p>
+          <h2 data-dialog-title></h2>
+          <p class="artist" data-dialog-artist></p>
+          <p class="description" data-dialog-description></p>
+          <div class="gallery-controls">
+            <button class="icon-button" type="button" aria-label="이전 이미지" data-action="gallery-prev">
+              <span aria-hidden="true">←</span>
+            </button>
+            <span data-gallery-count></span>
+            <button class="icon-button" type="button" aria-label="다음 이미지" data-action="gallery-next">
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </dialog>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
